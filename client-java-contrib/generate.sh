@@ -17,6 +17,8 @@
 # This script orchestrates the code generation procedure. It is executed inside a crdgen
 # container in order to minimize the environment dependencies on the host, being Docker only.
 
+set -x #debug
+
 CRD_URLS=${CRD_URLS:-}
 OUTPUT_DIR=${OUTPUT_DIR:-}
 KUBERNETES_CRD_GROUP_PREFIX=${KUBERNETES_CRD_GROUP_PREFIX:-}
