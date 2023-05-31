@@ -15,6 +15,7 @@ spec:
     - kt
     singular: kubernetestemplate
   scope: Namespaced
+  preserveUnknownFields: false
   versions:
   - name: v1
     schema:
